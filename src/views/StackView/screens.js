@@ -1,5 +1,9 @@
 import React from 'react';
 import { Animated, View, UIManager, StyleSheet } from 'react-native';
+import {
+  ScreenContainer as NativeScreenContainer,
+  Screen as NativeScreen,
+} from 'react-native-screens';
 
 let ScreenContainer = View;
 let Screen = Animated.View;
@@ -11,9 +15,6 @@ let Screen = Animated.View;
 // is linked natively (we only `require` the lib if native components are installed)
 if (UIManager['RNSScreen']) {
   // native screen components are available
-  const screens = require('react-native-screens');
-
-  const NativeScreen = screens.Screen;
   class WrappedNativeScreen extends React.Component {
     setNativeProps(props) {
       this._ref.setNativeProps(props);
@@ -40,7 +41,7 @@ if (UIManager['RNSScreen']) {
   }
 
   Screen = WrappedNativeScreen;
-  ScreenContainer = screens.ScreenContainer;
+  ScreenContainer = NativeScreenContainer;
 }
 
 export { ScreenContainer, Screen };
