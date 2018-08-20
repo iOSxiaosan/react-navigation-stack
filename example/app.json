@@ -12,6 +12,22 @@
       ],
       "config": "./rn-cli.config.js",
       "projectRoots": ""
+    },
+    "isDetached": true,
+    "detach": {
+      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.7.0-sdk29.0.0-de70611d-e42d-4d50-a6a5-2d8eabf6ed72.tar.gz",
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.6.0-sdk29.0.0-2366e226-0c19-4600-aa66-dce75dd474fb.tar.gz"
+    },
+    "scheme": "exp7d645332744141f09d6a772165e211ac",
+    "ios": {
+      "bundleIdentifier": "org.reactnavigation.stack",
+      "publishBundlePath": "ios/react-navigation-stack-example/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/react-navigation-stack-example/Supporting/shell-app-manifest.json"
+    },
+    "android": {
+      "package": "org.reactnavigation.stack",
+      "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
+      "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
     }
   }
 }

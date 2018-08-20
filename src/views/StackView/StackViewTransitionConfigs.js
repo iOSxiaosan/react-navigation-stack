@@ -25,7 +25,7 @@ const SlideFromRightIOS = {
   transitionSpec: IOSTransitionSpec,
   screenInterpolator: StyleInterpolator.forHorizontal,
   containerStyle: {
-    backgroundColor: '#000',
+    // backgroundColor: '#000',
   },
 };
 
@@ -34,7 +34,7 @@ const ModalSlideFromBottomIOS = {
   transitionSpec: IOSTransitionSpec,
   screenInterpolator: StyleInterpolator.forVertical,
   containerStyle: {
-    backgroundColor: '#000',
+    // backgroundColor: '#000',
   },
 };
 
