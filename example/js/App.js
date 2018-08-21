@@ -42,6 +42,10 @@ import TabsWithNavigationEvents from './TabsWithNavigationEvents';
 import KeyboardHandlingExample from './KeyboardHandlingExample';
 
 const ExampleInfo = {
+  SimpleScreen: {
+    name: 'Just a screen',
+    description: 'A screen',
+  },
   SimpleStack: {
     name: 'Stack Example',
     description: 'A card stack',
@@ -141,7 +145,16 @@ const ExampleInfo = {
   },
 };
 
+
+class SimpleScreen extends React.Component {
+  render() {
+    return <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}><Text>Simple screen</Text></View>
+  }
+}
+
+
 const ExampleRoutes = {
+  SimpleScreen,
   SimpleStack,
   SwitchWithStacks,
   SimpleTabs: SimpleTabs,

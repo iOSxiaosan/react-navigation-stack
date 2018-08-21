@@ -27,7 +27,8 @@ allprojects {
       url "$rootDir/maven-test"
     }
     maven {
-      url 'https://maven.google.com'
+        url 'https://maven.google.com/'
+        name 'Google'
     }
     jcenter()
     maven {

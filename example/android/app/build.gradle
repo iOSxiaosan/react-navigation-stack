@@ -96,13 +96,10 @@ apply from: 'expo.gradle'
 
 
 dependencies {
-    compile project(':react-native-screens')
   implementation fileTree(dir: 'libs', include: ['*.jar'])
+  implementation project(':react-native-screens')
 
   implementation 'com.android.support:multidex:1.0.1'
-
-  // Our dependencies
-  implementation 'com.android.support:appcompat-v7:27.1.1'
 
   // Our dependencies from ExpoView
   // DON'T ADD ANYTHING HERE THAT ISN'T IN EXPOVIEW. ONLY COPY THINGS FROM EXPOVIEW TO HERE.
@@ -152,6 +149,7 @@ dependencies {
   implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.4.1'
   implementation 'com.squareup.okhttp3:okhttp-ws:3.4.1'
   implementation 'com.squareup.okio:okio:1.9.0'
+  implementation 'android.arch.lifecycle:common:1.1.1'
 
   // Testing
   androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
